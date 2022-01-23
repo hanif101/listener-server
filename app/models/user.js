@@ -12,12 +12,12 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true
     },
-    username: {
-      type: String,
-      required: true,
-      unique: true,
-      trim: true
-    },
+    // username: {
+    //   type: String,
+    //   required: true,
+    //   unique: true,
+    //   trim: true
+    // },
     rooms: [
       {
         type: mongoose.Schema.Types.ObjectId,

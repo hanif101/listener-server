@@ -5,7 +5,7 @@ const mongooseBaseName = 'listener'
 
 // create the mongodb uri for development and test
 const database = {
-  development: `mongodb+srv://admin:admin@ga-projects.zra0m.mongodb.net/listener?retryWrites=true&w=majority`,
+  development: `${process.env.DB_URI}`,
   test: `mongodb://localhost/${mongooseBaseName}-test`
 }
 
